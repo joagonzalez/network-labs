@@ -1,0 +1,33 @@
+Apr 20 01:10:39.367 HYPERVISOR: Release 0.2.17-x86/Windows (tag 2017072410)
+Apr 20 01:10:39.367 HYPERVISOR: Started on IP = 127.0.0.1, TCP port = 14710.
+Apr 20 01:10:39.471 HYPERVISOR: exec_cmd: hypervisor version 
+Apr 20 01:10:39.471 HYPERVISOR: exec_cmd: hypervisor working_dir C:\Users\jgonzalez\Desktop\CCIE\proyectos\mpls\project-files\dynamips 
+Apr 20 01:10:39.474 GENERAL: working_dir=C:\Users\jgonzalez\Desktop\CCIE\proyectos\mpls\project-files\dynamips
+Apr 20 01:10:39.474 HYPERVISOR: exec_cmd: hypervisor working_dir C:\Users\jgonzalez\Desktop\CCIE\proyectos\mpls\project-files\dynamips\3208c094-af91-458f-8f7d-c9c1fd333fe2 
+Apr 20 01:10:39.474 GENERAL: working_dir=C:\Users\jgonzalez\Desktop\CCIE\proyectos\mpls\project-files\dynamips\3208c094-af91-458f-8f7d-c9c1fd333fe2
+Apr 20 01:10:39.474 HYPERVISOR: exec_cmd: vm create R1 1 c7200 
+Apr 20 01:10:39.474 VM: VM R1 created.
+Apr 20 01:10:39.474 HYPERVISOR: exec_cmd: vm set_con_tcp_port R1 5000 
+Apr 20 01:10:39.474 HYPERVISOR: exec_cmd: c7200 get_mac_addr R1 
+Apr 20 01:10:39.474 HYPERVISOR: exec_cmd: vm get_status R1 
+Apr 20 01:10:39.474 HYPERVISOR: exec_cmd: vm slot_add_binding R1 0 0 C7200-IO-FE 
+Apr 20 01:10:39.474 HYPERVISOR: exec_cmd: vm set_disk0 R1 0 
+Apr 20 01:10:39.474 HYPERVISOR: exec_cmd: vm set_exec_area R1 64 
+Apr 20 01:10:39.474 HYPERVISOR: exec_cmd: vm get_status R1 
+Apr 20 01:10:39.474 HYPERVISOR: exec_cmd: vm set_idle_pc R1 0x62cc912c 
+Apr 20 01:10:39.474 HYPERVISOR: exec_cmd: vm set_ios R1 C:/Users/jgonzalez/GNS3/images/IOS/c7200-advipservicesk9-mz.152-4.S5.image 
+Apr 20 01:10:39.490 HYPERVISOR: exec_cmd: c7200 set_mac_addr R1 ca01.3af8.0000 
+Apr 20 01:10:39.490 HYPERVISOR: exec_cmd: vm set_nvram R1 512 
+Apr 20 01:10:39.490 HYPERVISOR: exec_cmd: vm set_ram R1 512 
+Apr 20 01:10:39.490 HYPERVISOR: exec_cmd: vm get_status R1 
+Apr 20 01:10:39.490 HYPERVISOR: exec_cmd: vm slot_add_binding R1 1 0 PA-2FE-TX 
+Apr 20 01:10:39.490 HYPERVISOR: exec_cmd: vm get_status R1 
+Apr 20 01:10:39.490 HYPERVISOR: exec_cmd: vm slot_add_binding R1 2 0 PA-2FE-TX 
+Apr 20 01:10:39.490 HYPERVISOR: exec_cmd: vm get_status R1 
+Apr 20 01:10:39.490 HYPERVISOR: exec_cmd: vm slot_add_binding R1 3 0 PA-4T+ 
+Apr 20 01:10:43.358 HYPERVISOR: exec_cmd: nio create_udp udp-842fa1c2-1db7-4dfd-8c9b-5f09c9ccb32b 10002 127.0.0.1 10003 
+Apr 20 01:10:43.606 HYPERVISOR: exec_cmd: vm slot_add_nio_binding R1 0 0 udp-842fa1c2-1db7-4dfd-8c9b-5f09c9ccb32b 
+Apr 20 01:10:43.606 HYPERVISOR: exec_cmd: vm get_status R1 
+Apr 20 01:11:03.388 HYPERVISOR: Stopped.
+Apr 20 01:11:03.389 VM: VM R1 destroyed.
+Apr 20 01:11:03.412 GENERAL: reset done.

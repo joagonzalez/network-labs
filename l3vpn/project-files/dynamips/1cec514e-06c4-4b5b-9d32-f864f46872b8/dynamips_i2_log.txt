@@ -1,0 +1,33 @@
+Apr 20 01:10:39.545 HYPERVISOR: Release 0.2.17-x86/Windows (tag 2017072410)
+Apr 20 01:10:39.545 HYPERVISOR: Started on IP = 127.0.0.1, TCP port = 14723.
+Apr 20 01:10:40.027 HYPERVISOR: exec_cmd: hypervisor version 
+Apr 20 01:10:40.027 HYPERVISOR: exec_cmd: hypervisor working_dir C:\Users\jgonzalez\Desktop\CCIE\proyectos\mpls\project-files\dynamips 
+Apr 20 01:10:40.027 GENERAL: working_dir=C:\Users\jgonzalez\Desktop\CCIE\proyectos\mpls\project-files\dynamips
+Apr 20 01:10:40.027 HYPERVISOR: exec_cmd: hypervisor working_dir C:\Users\jgonzalez\Desktop\CCIE\proyectos\mpls\project-files\dynamips\1cec514e-06c4-4b5b-9d32-f864f46872b8 
+Apr 20 01:10:40.027 GENERAL: working_dir=C:\Users\jgonzalez\Desktop\CCIE\proyectos\mpls\project-files\dynamips\1cec514e-06c4-4b5b-9d32-f864f46872b8
+Apr 20 01:10:40.027 HYPERVISOR: exec_cmd: vm create SW2 2 c7200 
+Apr 20 01:10:40.027 VM: VM SW2 created.
+Apr 20 01:10:40.027 HYPERVISOR: exec_cmd: vm set_con_tcp_port SW2 5001 
+Apr 20 01:10:40.027 HYPERVISOR: exec_cmd: c7200 get_mac_addr SW2 
+Apr 20 01:10:40.027 HYPERVISOR: exec_cmd: vm get_status SW2 
+Apr 20 01:10:40.027 HYPERVISOR: exec_cmd: vm slot_add_binding SW2 0 0 C7200-IO-FE 
+Apr 20 01:10:40.027 HYPERVISOR: exec_cmd: vm set_disk0 SW2 0 
+Apr 20 01:10:40.027 HYPERVISOR: exec_cmd: vm set_exec_area SW2 64 
+Apr 20 01:10:40.027 HYPERVISOR: exec_cmd: vm get_status SW2 
+Apr 20 01:10:40.027 HYPERVISOR: exec_cmd: vm set_idle_pc SW2 0x62cc912c 
+Apr 20 01:10:40.027 HYPERVISOR: exec_cmd: vm set_ios SW2 C:/Users/jgonzalez/GNS3/images/IOS/c7200-advipservicesk9-mz.152-4.S5.image 
+Apr 20 01:10:40.027 HYPERVISOR: exec_cmd: c7200 set_mac_addr SW2 ca02.2bbc.0000 
+Apr 20 01:10:40.027 HYPERVISOR: exec_cmd: vm set_nvram SW2 512 
+Apr 20 01:10:40.027 HYPERVISOR: exec_cmd: vm set_ram SW2 512 
+Apr 20 01:10:40.027 HYPERVISOR: exec_cmd: vm get_status SW2 
+Apr 20 01:10:40.027 HYPERVISOR: exec_cmd: vm slot_add_binding SW2 1 0 PA-2FE-TX 
+Apr 20 01:10:40.027 HYPERVISOR: exec_cmd: vm get_status SW2 
+Apr 20 01:10:40.027 HYPERVISOR: exec_cmd: vm slot_add_binding SW2 2 0 PA-2FE-TX 
+Apr 20 01:10:40.027 HYPERVISOR: exec_cmd: vm get_status SW2 
+Apr 20 01:10:40.027 HYPERVISOR: exec_cmd: vm slot_add_binding SW2 3 0 PA-4T+ 
+Apr 20 01:10:43.935 HYPERVISOR: exec_cmd: nio create_udp udp-d0f9fcd0-119e-4435-807e-aa07becc3084 10010 127.0.0.1 10011 
+Apr 20 01:10:44.196 HYPERVISOR: exec_cmd: vm slot_add_nio_binding SW2 0 0 udp-d0f9fcd0-119e-4435-807e-aa07becc3084 
+Apr 20 01:10:44.196 HYPERVISOR: exec_cmd: vm get_status SW2 
+Apr 20 01:11:03.388 HYPERVISOR: Stopped.
+Apr 20 01:11:03.388 VM: VM SW2 destroyed.
+Apr 20 01:11:03.411 GENERAL: reset done.
