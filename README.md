@@ -5,7 +5,7 @@ Repositorio de laboratorios
 
 ### Laboratorio l3vpn
 
-![Figura 1](https://github.com/joagonzalez/networkLabs/tree/master/l3vpn/mpls-te.png)
+![Figura 1](https://raw.githubusercontent.com/joagonzalez/networkLabs/master/l3vpn/mpls-te.png)
 
 
 ### Descripción
