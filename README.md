@@ -1,6 +1,3 @@
-SDN-MPLS
-========
-
 Repositorio de laboratorios
 
 ### Laboratorio l3vpn
