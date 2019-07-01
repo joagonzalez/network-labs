@@ -2,7 +2,7 @@ Repositorio de laboratorios
 
 ### Laboratorio l3vpn
 
-![Figura 1](https://raw.githubusercontent.com/joagonzalez/networkLabs/master/l3vpn/mpls-te.png)
+![Figura 1](https://raw.githubusercontent.com/joagonzalez/networkLabs/master/l3vpn/l3vpn.png)
 
 
 ### Descripción
@@ -13,9 +13,11 @@ Repositorio de laboratorios
 
 - LDP utilizará las rutas seleccionadas por el IGP (en este caso con algoritmo SPF) para seleccionar el mejor LSP dentro de la LFIB (Lable Forwarding Information Base). Ver ejemplo práctico en R3, donde se selecciona R4 como próximo salto para alcanzar la lo0 de R5 (5.5.5.5/32)
 
-- Se configuran VRFs por cliente en los PE y se establecen sesiones BGP entre cada sitio y las fronteras de la red de transporte con el objetivo de anuncias las rutas de cada sitio
+- Se configuran VRFs por cliente en los PE 
 
-- Las rutas son redistribuidas internamente a través de comunidades BGP utilizando Route Distinguishers y Router Targets (Multi protocol BGP VPN v4)
+- CUSTOMER-A distribuira sus rutas a través de eBGP y CUSTOMER-B con EIGRP
+
+- Las rutas de los sitios son redistribuidas con comunidades BGP utilizando Route Distinguishers y Router Targets (Multi protocol BGP VPN v4)
 
 - TE podrá configurarse con RSVP o BGP
 
@@ -49,4 +51,63 @@ Tabla de enrutamiento R3:
       5.0.0.0/32 is subnetted, 1 subnets
 O        5.5.5.5 [110/3] via 10.0.34.4, 00:19:30, FastEthernet1/0.34
 
+```
+
+Configuracion de MP-BGP en R2#:
+
+```
+router bgp 2345
+ bgp log-neighbor-changes
+ no bgp default ipv4-unicast
+ neighbor 5.5.5.5 remote-as 2345
+ neighbor 5.5.5.5 update-source Loopback0
+ neighbor 192.168.12.1 remote-as 65012
+ !
+ address-family ipv4
+ exit-address-family
+ !
+ address-family vpnv4
+  neighbor 5.5.5.5 activate
+  neighbor 5.5.5.5 send-community both
+ exit-address-family
+ !
+ address-family ipv4 vrf CUSTOMER-A
+  redistribute connected
+  neighbor 192.168.12.1 remote-as 65012
+  neighbor 192.168.12.1 activate
+  neighbor 192.168.12.1 send-community both
+ exit-address-family
+ !
+ address-family ipv4 vrf CUSTOMER-B
+  redistribute connected
+  redistribute eigrp 1
+ exit-address-family
+ip bgp-community new-format
+
+router eigrp 65535
+ !
+ address-family ipv4 vrf CUSTOMER-B autonomous-system 1
+  default-metric 100000 10 255 1 1500
+  redistribute bgp 2345
+  network 192.168.22.0
+ exit-address-family
+  redistribute eigrp 1
+```
+
+Rutas aprendidas de todas las address-family en instancia BGP de R5#:
+
+```
+R5#sh ip bgp vpnv4 all 
+BGP table version is 13, local router ID is 5.5.5.5
+     Network          Next Hop            Metric LocPrf Weight Path
+Route Distinguisher: 2345:1 (default for vrf CUSTOMER-A)
+ *>i 1.1.1.0/24       2.2.2.2                  0    100      0 65012 ?
+ *>  6.6.6.0/24       192.168.56.1             0             0 65056 ?
+ *>i 192.168.12.0     2.2.2.2                  0    100      0 ?
+ *>  192.168.56.0     0.0.0.0                  0         32768 ?
+Route Distinguisher: 2345:2 (default for vrf CUSTOMER-B)
+ *>  11.11.11.0/24    192.168.11.1        156160         32768 ?
+ *>i 22.22.22.0/24    2.2.2.2             156160    100      0 ?
+ *>  192.168.11.0     0.0.0.0                  0         32768 ?
+ *>i 192.168.22.0     2.2.2.2                  0    100      0 ?
 ```
