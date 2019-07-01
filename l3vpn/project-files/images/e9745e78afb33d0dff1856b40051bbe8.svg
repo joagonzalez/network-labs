@@ -1,0 +1,38 @@
+<svg height="654" width="449"><text fill="#000000" fill-opacity="1.0" font-family="TypeWriter" font-size="10.0" font-weight="bold">router bgp 2345
+ bgp log-neighbor-changes
+ no bgp default ipv4-unicast
+ neighbor 5.5.5.5 remote-as 2345
+ neighbor 5.5.5.5 update-source Loopback0
+ neighbor 192.168.12.1 remote-as 65012
+ !
+ address-family ipv4
+ exit-address-family
+ !
+ address-family vpnv4
+  neighbor 5.5.5.5 activate
+  neighbor 5.5.5.5 send-community both
+ exit-address-family
+ !
+ address-family ipv4 vrf CUSTOMER-A
+  redistribute connected
+  neighbor 192.168.12.1 remote-as 65012
+  neighbor 192.168.12.1 activate
+  neighbor 192.168.12.1 send-community both
+ exit-address-family
+ !
+ address-family ipv4 vrf CUSTOMER-B
+  redistribute connected
+  redistribute eigrp 1
+ exit-address-family
+ip bgp-community new-format
+
+router eigrp 65535
+ !
+ address-family ipv4 vrf CUSTOMER-B autonomous-system 1
+  default-metric 100000 10 255 1 1500
+  redistribute bgp 2345
+  network 192.168.22.0
+ exit-address-family
+  redistribute eigrp 1
+
+</text></svg>
