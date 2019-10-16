@@ -1,0 +1,48 @@
+C7200 'Ghost': generic_nvram_extract_config: Unknown error -61605
+Cisco Router Simulation Platform (version 0.2.21-amd64/Linux stable)
+Copyright (c) 2005-2011 Christophe Fillot.
+Build date: Jul 12 2019 11:00:00
+
+Log file: writing to dynamips_i3_log.txt
+Hypervisor TCP control server started (IP 127.0.0.1 port 41957).
+CPU0: carved JIT exec zone of 64 Mb into 2048 pages of 32 Kb.
+NVRAM is empty, setting config register to 0x2142
+C7200 instance 'Ghost' (id 0):
+  VM Status  : 0
+  RAM size   : 256 Mb
+  IOMEM size : 256 Mb
+  NVRAM size : 128 Kb
+  NPE model  : npe-400
+  Midplane   : vxr
+  IOS image  : /home/jgonzalez/GNS3/images/IOS/c7200-advipservicesk9-mz.152-4.S5.image
+
+Loading ELF file '/home/jgonzalez/GNS3/images/IOS/c7200-advipservicesk9-mz.152-4.S5.image'...
+ELF entry point: 0x80008000
+
+C7200 'Ghost': starting simulation (CPU0 PC=0xffffffffbfc00000), JIT enabled.
+
+C7200 'Ghost': stopping simulation.
+CPU0: carved JIT exec zone of 64 Mb into 2048 pages of 32 Kb.
+NVRAM is empty, setting config register to 0x2142
+C7200 instance 'R1' (id 1):
+  VM Status  : 0
+  RAM size   : 256 Mb
+  IOMEM size : 256 Mb
+  NVRAM size : 512 Kb
+  NPE model  : npe-400
+  Midplane   : vxr
+  IOS image  : /home/jgonzalez/GNS3/images/IOS/c7200-advipservicesk9-mz.152-4.S5.image
+
+Loading ELF file '/home/jgonzalez/GNS3/images/IOS/c7200-advipservicesk9-mz.152-4.S5.image'...
+ELF loading skipped, using a ghost RAM file.
+ELF entry point: 0x80008000
+
+C7200 'R1': starting simulation (CPU0 PC=0xffffffffbfc00000), JIT enabled.
+NIO udp-b8b531c3-b283-4914-b938-616b0287d398: capturing to file '/home/jgonzalez/dev/networkLabs/l2vpn/tmp/captures/R1_FastEthernet00_to_R2_FastEthernet00.pcap'
+NIO udp-b8b531c3-b283-4914-b938-616b0287d398: ending packet capture.
+
+C7200 'R1': stopping simulation.
+Hypervisor: closing control sockets.
+Hypervisor: closing remote client connections.
+Shutdown in progress...
+Shutdown completed.

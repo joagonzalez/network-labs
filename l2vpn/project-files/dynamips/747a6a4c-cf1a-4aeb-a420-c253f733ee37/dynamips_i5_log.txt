@@ -1,0 +1,57 @@
+Oct 13 01:01:58.833 HYPERVISOR: Release 0.2.21-amd64/Linux (tag 2019071212)
+Oct 13 01:01:58.833 HYPERVISOR: Started on IP = 127.0.0.1, TCP port = 39493.
+Oct 13 01:01:58.843 HYPERVISOR: exec_cmd: hypervisor version 
+Oct 13 01:01:58.843 HYPERVISOR: exec_cmd: hypervisor working_dir /home/jgonzalez/dev/networkLabs/l2vpn/project-files/dynamips 
+Oct 13 01:01:58.843 GENERAL: working_dir=/home/jgonzalez/dev/networkLabs/l2vpn/project-files/dynamips
+Oct 13 01:01:58.843 HYPERVISOR: exec_cmd: hypervisor working_dir /home/jgonzalez/dev/networkLabs/l2vpn/project-files/dynamips/5674a7f9-a92c-4a74-8332-6fb27fbb4d40 
+Oct 13 01:01:58.843 GENERAL: working_dir=/home/jgonzalez/dev/networkLabs/l2vpn/project-files/dynamips/5674a7f9-a92c-4a74-8332-6fb27fbb4d40
+Oct 13 01:01:58.843 HYPERVISOR: exec_cmd: vm create R3 3 c7200 
+Oct 13 01:01:58.844 VM: VM R3 created.
+Oct 13 01:01:58.844 HYPERVISOR: exec_cmd: vm set_con_tcp_port R3 5003 
+Oct 13 01:01:58.844 HYPERVISOR: exec_cmd: c7200 get_mac_addr R3 
+Oct 13 01:01:58.844 HYPERVISOR: exec_cmd: vm get_status R3 
+Oct 13 01:01:58.845 HYPERVISOR: exec_cmd: vm slot_add_binding R3 0 0 C7200-IO-FE 
+Oct 13 01:01:58.845 HYPERVISOR: exec_cmd: vm set_disk0 R3 0 
+Oct 13 01:01:58.845 HYPERVISOR: exec_cmd: vm get_status R3 
+Oct 13 01:01:58.846 HYPERVISOR: exec_cmd: vm set_idle_pc R3 0x606df838 
+Oct 13 01:01:58.846 HYPERVISOR: exec_cmd: vm set_ios R3 /home/jgonzalez/GNS3/images/IOS/c7200-advipservicesk9-mz.152-4.S5.image 
+Oct 13 01:01:58.847 HYPERVISOR: exec_cmd: c7200 set_mac_addr R3 ca03.2f1e.0000 
+Oct 13 01:01:58.847 HYPERVISOR: exec_cmd: vm set_nvram R3 512 
+Oct 13 01:01:58.847 HYPERVISOR: exec_cmd: vm set_ram R3 512 
+Oct 13 01:01:58.847 HYPERVISOR: exec_cmd: vm get_status R3 
+Oct 13 01:01:58.847 HYPERVISOR: exec_cmd: vm slot_add_binding R3 1 0 PA-2FE-TX 
+Oct 13 01:01:58.847 HYPERVISOR: exec_cmd: vm get_status R3 
+Oct 13 01:01:58.848 HYPERVISOR: exec_cmd: vm slot_add_binding R3 2 0 PA-2FE-TX 
+Oct 13 01:02:17.714 HYPERVISOR: exec_cmd: vm set_ios R3 /home/jgonzalez/GNS3/images/IOS/c7200-advipservicesk9-mz.152-4.S5.image 
+Oct 13 01:02:55.260 HYPERVISOR: exec_cmd: nio create_udp udp-9365bd83-c520-442b-9544-c4a54da2a5c7 10010 127.0.0.1 10011 
+Oct 13 01:02:55.471 HYPERVISOR: exec_cmd: vm slot_add_nio_binding R3 0 0 udp-9365bd83-c520-442b-9544-c4a54da2a5c7 
+Oct 13 01:02:55.472 HYPERVISOR: exec_cmd: vm get_status R3 
+Oct 13 01:02:58.046 HYPERVISOR: exec_cmd: nio create_udp udp-96020da0-b63d-4209-bbdb-4bc24cf79c91 10014 127.0.0.1 10015 
+Oct 13 01:02:58.048 HYPERVISOR: exec_cmd: vm slot_add_nio_binding R3 1 0 udp-96020da0-b63d-4209-bbdb-4bc24cf79c91 
+Oct 13 01:02:58.048 HYPERVISOR: exec_cmd: vm get_status R3 
+Oct 13 01:04:06.386 HYPERVISOR: exec_cmd: vm set_ios R3 /home/jgonzalez/GNS3/images/IOS/c7200-advipservicesk9-mz.152-4.S5.image 
+Oct 13 01:04:10.086 HYPERVISOR: exec_cmd: vm set_ios R3 /home/jgonzalez/GNS3/images/IOS/c7200-advipservicesk9-mz.152-4.S5.image 
+Oct 13 01:27:33.965 HYPERVISOR: exec_cmd: vm get_status R3 
+Oct 13 01:27:33.985 HYPERVISOR: exec_cmd: vm set_idle_pc R3 0x63185884 
+Oct 13 01:40:40.602 HYPERVISOR: exec_cmd: vm set_ghost_status R3 2 
+Oct 13 01:40:40.602 HYPERVISOR: exec_cmd: vm set_ghost_file R3 /home/jgonzalez/dev/networkLabs/l2vpn/project-files/dynamips/c7200-advipservicesk9-mz.152-4.S5.image-512.ghost 
+Oct 13 01:40:40.602 HYPERVISOR: exec_cmd: vm get_status R3 
+Oct 13 01:40:40.603 HYPERVISOR: exec_cmd: vm set_config R3 configs/i3_startup-config.cfg 
+Oct 13 01:40:40.603 HYPERVISOR: exec_cmd: vm start R3 
+Oct 13 01:41:10.813 HYPERVISOR: exec_cmd: vm extract_config R3 
+Oct 13 01:48:40.842 HYPERVISOR: exec_cmd: vm extract_config R3 
+Oct 13 01:49:10.844 HYPERVISOR: exec_cmd: vm extract_config R3 
+Oct 13 01:50:10.847 HYPERVISOR: exec_cmd: vm extract_config R3 
+Oct 13 03:10:04.204 HYPERVISOR: exec_cmd: vm get_status R3 
+Oct 13 03:10:04.204 HYPERVISOR: exec_cmd: vm stop R3 
+Oct 13 03:10:04.297 VM: VM R3 shutdown.
+Oct 13 03:10:04.298 HYPERVISOR: exec_cmd: vm extract_config R3 
+Oct 13 03:10:07.569 HYPERVISOR: exec_cmd: vm get_status R3 
+Oct 13 03:10:07.569 HYPERVISOR: exec_cmd: vm extract_config R3 
+Oct 13 03:10:07.768 HYPERVISOR: exec_cmd: vm get_status R3 
+Oct 13 03:10:07.768 HYPERVISOR: exec_cmd: vm extract_config R3 
+Oct 13 03:10:07.769 HYPERVISOR: exec_cmd: vm delete R3 
+Oct 13 03:10:07.769 VM: VM R3 destroyed.
+Oct 13 03:10:07.769 HYPERVISOR: exec_cmd: hypervisor stop 
+Oct 13 03:10:07.778 HYPERVISOR: Stopped.
+Oct 13 03:10:07.778 GENERAL: reset done.

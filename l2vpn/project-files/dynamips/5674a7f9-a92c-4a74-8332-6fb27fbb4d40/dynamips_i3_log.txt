@@ -1,0 +1,71 @@
+Oct 13 01:01:58.776 HYPERVISOR: Release 0.2.21-amd64/Linux (tag 2019071212)
+Oct 13 01:01:58.776 HYPERVISOR: Started on IP = 127.0.0.1, TCP port = 41957.
+Oct 13 01:01:58.781 HYPERVISOR: exec_cmd: hypervisor version 
+Oct 13 01:01:58.781 HYPERVISOR: exec_cmd: hypervisor working_dir /home/jgonzalez/dev/networkLabs/l2vpn/project-files/dynamips 
+Oct 13 01:01:58.781 GENERAL: working_dir=/home/jgonzalez/dev/networkLabs/l2vpn/project-files/dynamips
+Oct 13 01:01:58.781 HYPERVISOR: exec_cmd: hypervisor working_dir /home/jgonzalez/dev/networkLabs/l2vpn/project-files/dynamips/8b99fc76-d227-43bf-8265-831a80526d42 
+Oct 13 01:01:58.781 GENERAL: working_dir=/home/jgonzalez/dev/networkLabs/l2vpn/project-files/dynamips/8b99fc76-d227-43bf-8265-831a80526d42
+Oct 13 01:01:58.781 HYPERVISOR: exec_cmd: vm create R1 1 c7200 
+Oct 13 01:01:58.781 VM: VM R1 created.
+Oct 13 01:01:58.781 HYPERVISOR: exec_cmd: vm set_con_tcp_port R1 5001 
+Oct 13 01:01:58.782 HYPERVISOR: exec_cmd: c7200 get_mac_addr R1 
+Oct 13 01:01:58.782 HYPERVISOR: exec_cmd: vm get_status R1 
+Oct 13 01:01:58.782 HYPERVISOR: exec_cmd: vm slot_add_binding R1 0 0 C7200-IO-FE 
+Oct 13 01:01:58.782 HYPERVISOR: exec_cmd: vm set_disk0 R1 0 
+Oct 13 01:01:58.782 HYPERVISOR: exec_cmd: vm get_status R1 
+Oct 13 01:01:58.782 HYPERVISOR: exec_cmd: vm set_idle_pc R1 0x606df838 
+Oct 13 01:01:58.783 HYPERVISOR: exec_cmd: vm set_ios R1 /home/jgonzalez/GNS3/images/IOS/c7200-advipservicesk9-mz.152-4.S5.image 
+Oct 13 01:01:58.783 HYPERVISOR: exec_cmd: c7200 set_mac_addr R1 ca01.2f00.0000 
+Oct 13 01:01:58.783 HYPERVISOR: exec_cmd: vm set_nvram R1 512 
+Oct 13 01:01:58.784 HYPERVISOR: exec_cmd: vm set_ram R1 512 
+Oct 13 01:01:58.784 HYPERVISOR: exec_cmd: vm get_status R1 
+Oct 13 01:01:58.784 HYPERVISOR: exec_cmd: vm slot_add_binding R1 1 0 PA-2FE-TX 
+Oct 13 01:01:58.784 HYPERVISOR: exec_cmd: vm get_status R1 
+Oct 13 01:01:58.784 HYPERVISOR: exec_cmd: vm slot_add_binding R1 2 0 PA-2FE-TX 
+Oct 13 01:02:14.175 HYPERVISOR: exec_cmd: vm set_ios R1 /home/jgonzalez/GNS3/images/IOS/c7200-advipservicesk9-mz.152-4.S5.image 
+Oct 13 01:02:51.684 HYPERVISOR: exec_cmd: nio create_udp udp-b8b531c3-b283-4914-b938-616b0287d398 10002 127.0.0.1 10003 
+Oct 13 01:02:51.896 HYPERVISOR: exec_cmd: vm slot_add_nio_binding R1 0 0 udp-b8b531c3-b283-4914-b938-616b0287d398 
+Oct 13 01:02:51.897 HYPERVISOR: exec_cmd: vm get_status R1 
+Oct 13 01:04:12.997 HYPERVISOR: exec_cmd: vm set_ios R1 /home/jgonzalez/GNS3/images/IOS/c7200-advipservicesk9-mz.152-4.S5.image 
+Oct 13 01:18:22.008 HYPERVISOR: exec_cmd: vm set_ios R1 /home/jgonzalez/GNS3/images/IOS/c7200-advipservicesk9-mz.152-4.S5.image 
+Oct 13 01:20:43.303 HYPERVISOR: exec_cmd: vm create Ghost 0 c7200 
+Oct 13 01:20:43.303 VM: VM Ghost created.
+Oct 13 01:20:43.303 HYPERVISOR: exec_cmd: vm set_ios Ghost /home/jgonzalez/GNS3/images/IOS/c7200-advipservicesk9-mz.152-4.S5.image 
+Oct 13 01:20:43.303 HYPERVISOR: exec_cmd: vm set_ghost_status Ghost 1 
+Oct 13 01:20:43.304 HYPERVISOR: exec_cmd: vm set_ghost_file Ghost /home/jgonzalez/dev/networkLabs/l2vpn/project-files/dynamips/c7200-advipservicesk9-mz.152-4.S5.image-512.ghost 
+Oct 13 01:20:43.304 HYPERVISOR: exec_cmd: vm set_ram Ghost 512 
+Oct 13 01:20:43.304 HYPERVISOR: exec_cmd: vm get_status Ghost 
+Oct 13 01:20:43.305 HYPERVISOR: exec_cmd: vm set_config Ghost configs/i0_startup-config.cfg 
+Oct 13 01:20:43.306 HYPERVISOR: exec_cmd: vm start Ghost 
+Oct 13 01:20:43.604 HYPERVISOR: exec_cmd: vm get_status Ghost 
+Oct 13 01:20:43.605 HYPERVISOR: exec_cmd: vm stop Ghost 
+Oct 13 01:20:43.771 VM: VM Ghost shutdown.
+Oct 13 01:20:43.772 HYPERVISOR: exec_cmd: vm extract_config Ghost 
+Oct 13 01:20:43.773 HYPERVISOR: exec_cmd: vm clean_delete Ghost 
+Oct 13 01:20:43.773 VM: VM Ghost destroyed.
+Oct 13 01:20:43.775 HYPERVISOR: exec_cmd: vm set_ghost_status R1 2 
+Oct 13 01:20:43.775 HYPERVISOR: exec_cmd: vm set_ghost_file R1 /home/jgonzalez/dev/networkLabs/l2vpn/project-files/dynamips/c7200-advipservicesk9-mz.152-4.S5.image-512.ghost 
+Oct 13 01:20:43.775 HYPERVISOR: exec_cmd: vm get_status R1 
+Oct 13 01:20:43.776 HYPERVISOR: exec_cmd: vm set_config R1 configs/i1_startup-config.cfg 
+Oct 13 01:20:43.776 HYPERVISOR: exec_cmd: vm start R1 
+Oct 13 01:21:13.990 HYPERVISOR: exec_cmd: vm extract_config R1 
+Oct 13 01:22:43.995 HYPERVISOR: exec_cmd: vm extract_config R1 
+Oct 13 01:24:43.999 HYPERVISOR: exec_cmd: vm extract_config R1 
+Oct 13 01:27:33.951 HYPERVISOR: exec_cmd: vm get_status R1 
+Oct 13 01:27:33.985 HYPERVISOR: exec_cmd: vm set_idle_pc_online R1 0 0x63185884 
+Oct 13 02:52:42.730 HYPERVISOR: exec_cmd: nio bind_filter udp-b8b531c3-b283-4914-b938-616b0287d398 2 capture 
+Oct 13 02:52:42.731 HYPERVISOR: exec_cmd: nio setup_filter udp-b8b531c3-b283-4914-b938-616b0287d398 2 en10mb /home/jgonzalez/dev/networkLabs/l2vpn/tmp/captures/R1_FastEthernet00_to_R2_FastEthernet00.pcap 
+Oct 13 03:08:35.620 HYPERVISOR: exec_cmd: nio unbind_filter udp-b8b531c3-b283-4914-b938-616b0287d398 2 
+Oct 13 03:10:04.203 HYPERVISOR: exec_cmd: vm get_status R1 
+Oct 13 03:10:04.204 HYPERVISOR: exec_cmd: vm stop R1 
+Oct 13 03:10:04.294 VM: VM R1 shutdown.
+Oct 13 03:10:04.295 HYPERVISOR: exec_cmd: vm extract_config R1 
+Oct 13 03:10:07.568 HYPERVISOR: exec_cmd: vm get_status R1 
+Oct 13 03:10:07.569 HYPERVISOR: exec_cmd: vm extract_config R1 
+Oct 13 03:10:07.719 HYPERVISOR: exec_cmd: vm get_status R1 
+Oct 13 03:10:07.719 HYPERVISOR: exec_cmd: vm extract_config R1 
+Oct 13 03:10:07.720 HYPERVISOR: exec_cmd: vm delete R1 
+Oct 13 03:10:07.720 VM: VM R1 destroyed.
+Oct 13 03:10:07.721 HYPERVISOR: exec_cmd: hypervisor stop 
+Oct 13 03:10:08.208 HYPERVISOR: Stopped.
+Oct 13 03:10:08.208 GENERAL: reset done.
