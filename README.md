@@ -1,11 +1,14 @@
-Repositorio de laboratorios
+# Repositorio de laboratorios de red
 
-### Laboratorio l3vpn
+**Content**
+- [l3vpn](#l3vpn)
+- [l2vpn](#l2vpn)
+- [HSRP](#hsrp)
 
-![Figura 1](https://raw.githubusercontent.com/joagonzalez/networkLabs/master/l3vpn/l3vpn.png)
+### l3vpn
 
+![Figura 1](l3vpn/l3vpn.png)
 
-### Descripción
 
 - Se define un core MPLS con múltiples caminos en la topología física con el objetivo de probar configuraciones de TE con LDP, RSVP tanto para intServ como diffServ
 
@@ -111,3 +114,24 @@ Route Distinguisher: 2345:2 (default for vrf CUSTOMER-B)
  *>  192.168.11.0     0.0.0.0                  0         32768 ?
  *>i 192.168.22.0     2.2.2.2                  0    100      0 ?
 ```
+# l2vpn
+Esquema de l2vpn sobre red mpls utilizando ospf para redistribucion de loopbacks. Por otro lado, se utiliza xconnect en extremos de clientes para generar un vinculo l2 a través de nube mpls y RIP para redistribución de rutas entre extremos.
+
+```
+interface FastEthernet0/0
+ no ip address
+ duplex full
+ no keepalive
+ xconnect 5.5.5.5 16 encapsulation mpls pw-class R1_L2-R6_L2
+end
+```
+
+![Figura 2](l2vpn/l2vpn.png)
+
+
+
+# hsrp
+
+Se utiliza HSRP para dar redundancia a default gateway de una red con multiples proveedores. Además, se utiliza tracking para cambiar el costo de la prioridad HSRP ante caida de interfaz wan. Tambien se utiliza IP SLA para trackear el estado de las interfaces del lado carrier.
+
+![Figura 3](hsrp/hsrp.png)
