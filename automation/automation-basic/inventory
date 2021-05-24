@@ -11,3 +11,4 @@ ansible_become_method=enable
 ansible_network_os=ios
 ansible_user=admin
 ansible_password=admin
+ansible_become_password=admin

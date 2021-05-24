@@ -10,13 +10,14 @@
       shell: "date +%Y-%m-%d"
       register: tstamp
       delegate_to: localhost
-
+    
     - name: Connect remote network devices
       cli_command:
-        command: sh ip int desc
+        command: sh int desc
       register: output
+      ignore_errors: yes
 
     - name: Debug commands
       debug:
-        msg: "{{output}}"
+        msg: "{{output.stdout_lines}}"
     
