@@ -1,0 +1,22 @@
+---
+- name: RUN COMMAND AND PRINT TO TERMINAL WINDOW
+  hosts: network
+  connection: local
+  gather_facts: false
+
+  tasks:
+
+    - name: Get timestamp from the system
+      shell: "date +%Y-%m-%d"
+      register: tstamp
+      delegate_to: localhost
+
+    - name: Connect remote network devices
+      cli_command:
+        command: sh ip int desc
+      register: output
+
+    - name: Debug commands
+      debug:
+        msg: "{{output}}"
+    
