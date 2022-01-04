@@ -2,11 +2,10 @@
     "auto_close": true,
     "auto_open": false,
     "auto_start": false,
-    "drawing_grid_size": 75,
     "grid_size": 75,
     "name": "mpls",
     "project_id": "9916c78f-fc5e-457a-8071-82e0969c4e18",
-    "revision": 9,
+    "revision": 8,
     "scene_height": 1000,
     "scene_width": 2000,
     "show_grid": false,
@@ -19,7 +18,6 @@
         "drawings": [
             {
                 "drawing_id": "7770b2a8-c0ea-40d0-9144-80705b327e0f",
-                "locked": false,
                 "rotation": 0,
                 "svg": "<svg height=\"100\" width=\"200\"><rect fill=\"#aaff7f\" fill-opacity=\"1.0\" height=\"100\" stroke=\"#000000\" stroke-width=\"2\" width=\"200\" /></svg>",
                 "x": -585,
@@ -28,7 +26,6 @@
             },
             {
                 "drawing_id": "e12fa6de-2d88-4063-87dc-b43779a4ab90",
-                "locked": false,
                 "rotation": 0,
                 "svg": "<svg height=\"100\" width=\"200\"><rect fill=\"#cecece\" fill-opacity=\"1.0\" height=\"100\" stroke=\"#000000\" stroke-width=\"2\" width=\"200\" /></svg>",
                 "x": -583,
@@ -37,7 +34,6 @@
             },
             {
                 "drawing_id": "ce8c2d8d-3111-40dd-b96e-b75e6afd7830",
-                "locked": false,
                 "rotation": 0,
                 "svg": "<svg height=\"100\" width=\"200\"><rect fill=\"#aaff7f\" fill-opacity=\"1.0\" height=\"100\" stroke=\"#000000\" stroke-width=\"2\" width=\"200\" /></svg>",
                 "x": 397,
@@ -46,7 +42,6 @@
             },
             {
                 "drawing_id": "0447b723-a41b-4868-9482-5607c7105af6",
-                "locked": false,
                 "rotation": 0,
                 "svg": "<svg height=\"100\" width=\"200\"><rect fill=\"#cecece\" fill-opacity=\"1.0\" height=\"100\" stroke=\"#000000\" stroke-width=\"2\" width=\"200\" /></svg>",
                 "x": 404,
@@ -55,7 +50,6 @@
             },
             {
                 "drawing_id": "5dcc8f50-ca36-407a-a12f-4858cca27708",
-                "locked": false,
                 "rotation": 0,
                 "svg": "<svg height=\"25\" width=\"68\"><text fill=\"#000000\" fill-opacity=\"1.0\" font-family=\"TypeWriter\" font-size=\"10.0\" font-weight=\"bold\">: 1.1.1.1</text></svg>",
                 "x": -502,
@@ -64,7 +58,6 @@
             },
             {
                 "drawing_id": "7385012b-69aa-4f0d-b0ed-6a163a8518b5",
-                "locked": false,
                 "rotation": 0,
                 "svg": "<svg height=\"42\" width=\"126\"><text fill=\"#000000\" fill-opacity=\"1.0\" font-family=\"TypeWriter\" font-size=\"10.0\" font-weight=\"bold\">VLAN 12\n192.168.12.0/24</text></svg>",
                 "x": -544,
@@ -73,7 +66,6 @@
             },
             {
                 "drawing_id": "c133baa5-9838-4f93-b768-12faeea7f5a9",
-                "locked": false,
                 "rotation": 0,
                 "svg": "<svg height=\"42\" width=\"126\"><text fill=\"#000000\" fill-opacity=\"1.0\" font-family=\"TypeWriter\" font-size=\"10.0\" font-weight=\"bold\">VLAN 22\n192.168.22.0/24</text></svg>",
                 "x": -542,
@@ -82,7 +74,6 @@
             },
             {
                 "drawing_id": "9012ed8f-d4d4-426b-a9e5-c935992041fc",
-                "locked": false,
                 "rotation": 0,
                 "svg": "<svg height=\"25\" width=\"104\"><text fill=\"#000000\" fill-opacity=\"1.0\" font-family=\"TypeWriter\" font-size=\"10.0\" font-weight=\"bold\">: 22.22.22.22</text></svg>",
                 "x": -515,
@@ -91,7 +82,6 @@
             },
             {
                 "drawing_id": "ba7c3373-273b-45c1-85e5-ec37339f4786",
-                "locked": false,
                 "rotation": 0,
                 "svg": "<svg height=\"25\" width=\"68\"><text fill=\"#000000\" fill-opacity=\"1.0\" font-family=\"TypeWriter\" font-size=\"10.0\" font-weight=\"bold\">: 2.2.2.2</text></svg>",
                 "x": -276,
@@ -100,7 +90,6 @@
             },
             {
                 "drawing_id": "ca407283-29a3-4acf-99fe-035c92055517",
-                "locked": false,
                 "rotation": 0,
                 "svg": "<svg height=\"25\" width=\"93\"><text fill=\"#000000\" fill-opacity=\"1.0\" font-family=\"TypeWriter\" font-size=\"10.0\" font-weight=\"bold\">Customer-A</text></svg>",
                 "x": -527,
@@ -109,7 +98,6 @@
             },
             {
                 "drawing_id": "d4742776-512b-4f2b-bc16-a771b5f1da15",
-                "locked": false,
                 "rotation": 0,
                 "svg": "<svg height=\"25\" width=\"93\"><text fill=\"#000000\" fill-opacity=\"1.0\" font-family=\"TypeWriter\" font-size=\"10.0\" font-weight=\"bold\">Customer-A</text></svg>",
                 "x": 436,
@@ -118,7 +106,6 @@
             },
             {
                 "drawing_id": "fe4e0630-ca47-4103-8441-0a4d991291ad",
-                "locked": false,
                 "rotation": 0,
                 "svg": "<svg height=\"25\" width=\"93\"><text fill=\"#000000\" fill-opacity=\"1.0\" font-family=\"TypeWriter\" font-size=\"10.0\" font-weight=\"bold\">Customer-B</text></svg>",
                 "x": -520,
@@ -127,7 +114,6 @@
             },
             {
                 "drawing_id": "f478b5e5-a614-4b59-a6ec-ce6c7533fc1e",
-                "locked": false,
                 "rotation": 0,
                 "svg": "<svg height=\"25\" width=\"93\"><text fill=\"#000000\" fill-opacity=\"1.0\" font-family=\"TypeWriter\" font-size=\"10.0\" font-weight=\"bold\">Customer-B</text></svg>",
                 "x": 460,
@@ -136,7 +122,6 @@
             },
             {
                 "drawing_id": "5e0ce05b-0553-4828-87cd-9b836cb5e55e",
-                "locked": false,
                 "rotation": 0,
                 "svg": "<svg height=\"25\" width=\"104\"><text fill=\"#000000\" fill-opacity=\"1.0\" font-family=\"TypeWriter\" font-size=\"10.0\" font-weight=\"bold\">: 11.11.11.11</text></svg>",
                 "x": 479,
@@ -145,7 +130,6 @@
             },
             {
                 "drawing_id": "cfd05fa0-ed19-4c3f-a4cf-9da79fc57bfa",
-                "locked": false,
                 "rotation": 0,
                 "svg": "<svg height=\"25\" width=\"86\"><text fill=\"#000000\" fill-opacity=\"1.0\" font-family=\"TypeWriter\" font-size=\"10.0\" font-weight=\"bold\">MPLS Core</text></svg>",
                 "x": -164,
@@ -154,7 +138,6 @@
             },
             {
                 "drawing_id": "ce54cf5d-3182-4cf2-8502-604ec06cb9e9",
-                "locked": false,
                 "rotation": 0,
                 "svg": "<svg height=\"122\" width=\"384\"><rect fill=\"#ffaa00\" fill-opacity=\"1.0\" height=\"122\" stroke=\"#000000\" stroke-width=\"2\" width=\"384\" /></svg>",
                 "x": -179,
@@ -163,7 +146,6 @@
             },
             {
                 "drawing_id": "e9fd9581-f6ef-44ef-a9af-2955b1ce0595",
-                "locked": false,
                 "rotation": 0,
                 "svg": "<svg height=\"25\" width=\"68\"><text fill=\"#000000\" fill-opacity=\"1.0\" font-family=\"TypeWriter\" font-size=\"10.0\" font-weight=\"bold\">: 5.5.5.5</text></svg>",
                 "x": 265,
@@ -172,7 +154,6 @@
             },
             {
                 "drawing_id": "7b9e35cb-c31c-40d9-9c71-518d1ff5ba8e",
-                "locked": false,
                 "rotation": 0,
                 "svg": "<svg height=\"25\" width=\"68\"><text fill=\"#000000\" fill-opacity=\"1.0\" font-family=\"TypeWriter\" font-size=\"10.0\" font-weight=\"bold\">: 3.3.3.3</text></svg>",
                 "x": -92,
@@ -181,7 +162,6 @@
             },
             {
                 "drawing_id": "b44c447e-cefb-4ad4-be62-a7ef2bd15205",
-                "locked": false,
                 "rotation": 0,
                 "svg": "<svg height=\"25\" width=\"68\"><text fill=\"#000000\" fill-opacity=\"1.0\" font-family=\"TypeWriter\" font-size=\"10.0\" font-weight=\"bold\">: 4.4.4.4</text></svg>",
                 "x": 99,
@@ -190,7 +170,6 @@
             },
             {
                 "drawing_id": "8d1d4558-6b3a-4895-a59b-f35478436a52",
-                "locked": false,
                 "rotation": 0,
                 "svg": "<svg height=\"0\" width=\"494\"><line stroke=\"#737373\" stroke-dasharray=\"5, 25\" stroke-width=\"2\" x1=\"0\" x2=\"494\" y1=\"0\" y2=\"0\" /></svg>",
                 "x": -229,
@@ -199,7 +178,6 @@
             },
             {
                 "drawing_id": "9d8d0f49-cee3-46c9-8dd3-0b0defc55e45",
-                "locked": false,
                 "rotation": 0,
                 "svg": "<svg height=\"42\" width=\"65\"><text fill=\"#000000\" fill-opacity=\"1.0\" font-family=\"TypeWriter\" font-size=\"10.0\" font-weight=\"bold\">MP-BGP\nVPN v4</text></svg>",
                 "x": -7,
@@ -208,7 +186,6 @@
             },
             {
                 "drawing_id": "a94b93e3-dd2c-4078-9708-83844f1231c9",
-                "locked": false,
                 "rotation": 0,
                 "svg": "<svg height=\"42\" width=\"126\"><text fill=\"#000000\" fill-opacity=\"1.0\" font-family=\"TypeWriter\" font-size=\"10.0\" font-weight=\"bold\">VLAN 56\n192.168.56.0/24</text></svg>",
                 "x": 456,
@@ -217,7 +194,6 @@
             },
             {
                 "drawing_id": "fc436567-b283-40ca-803f-8eb9726f5ee7",
-                "locked": false,
                 "rotation": 0,
                 "svg": "<svg height=\"42\" width=\"126\"><text fill=\"#000000\" fill-opacity=\"1.0\" font-family=\"TypeWriter\" font-size=\"10.0\" font-weight=\"bold\">VLAN 11\n192.168.11.0/24</text></svg>",
                 "x": 456,
@@ -226,7 +202,6 @@
             },
             {
                 "drawing_id": "cab58dfe-318d-4d52-8226-4708c1d291b7",
-                "locked": false,
                 "rotation": 0,
                 "svg": "<svg height=\"42\" width=\"99\"><text fill=\"#000000\" fill-opacity=\"1.0\" font-family=\"TypeWriter\" font-size=\"10.0\" font-weight=\"bold\">VLAN 34\n10.0.34.0/24</text></svg>",
                 "x": -21,
@@ -235,7 +210,6 @@
             },
             {
                 "drawing_id": "f57b0215-1039-4224-bf29-bd06cb71f506",
-                "locked": false,
                 "rotation": 0,
                 "svg": "<svg height=\"42\" width=\"99\"><text fill=\"#000000\" fill-opacity=\"1.0\" font-family=\"TypeWriter\" font-size=\"10.0\" font-weight=\"bold\">VLAN 45\n10.0.45.0/24</text></svg>",
                 "x": 173,
@@ -244,7 +218,6 @@
             },
             {
                 "drawing_id": "598a5a05-47d7-4034-8c44-d0b675fad75f",
-                "locked": false,
                 "rotation": 0,
                 "svg": "<svg height=\"42\" width=\"99\"><text fill=\"#000000\" fill-opacity=\"1.0\" font-family=\"TypeWriter\" font-size=\"10.0\" font-weight=\"bold\">VLAN 23\n10.0.23.0/24</text></svg>",
                 "x": -221,
@@ -253,7 +226,6 @@
             },
             {
                 "drawing_id": "17a74e0e-aae9-4e4c-b8bd-2142c1039545",
-                "locked": false,
                 "rotation": 0,
                 "svg": "<svg height=\"25\" width=\"68\"><text fill=\"#000000\" fill-opacity=\"1.0\" font-family=\"TypeWriter\" font-size=\"10.0\" font-weight=\"bold\">: 6.6.6.6</text></svg>",
                 "x": 487,
@@ -262,7 +234,6 @@
             },
             {
                 "drawing_id": "1b4c3f87-f9d2-48ef-95d2-aeeddcda2bda",
-                "locked": false,
                 "rotation": 0,
                 "svg": "<svg height=\"25\" width=\"95\"><text fill=\"#000000\" fill-opacity=\"1.0\" font-family=\"TypeWriter\" font-size=\"10.0\" font-weight=\"bold\">OSPF + LDP</text></svg>",
                 "x": -21,
@@ -271,7 +242,6 @@
             },
             {
                 "drawing_id": "0cdacd95-e983-4b5c-b58e-b1342311a164",
-                "locked": false,
                 "rotation": 0,
                 "svg": "<svg height=\"144\" width=\"562\"><text fill=\"#000000\" fill-opacity=\"1.0\" font-family=\"TypeWriter\" font-size=\"10.0\" font-weight=\"bold\">- ISP AS = 2345\n- OSPF como IGP para distribuir loopbacks y formar LDP adjacencies\n- MPLS con LDP para aprendizaje de LSPs\n- MBGP para redistribuir prefijos de customers en VRFs (route targets)\n- VRFs para soportar tabla de enrutamiento por cliente\n- PHP (Penultimate hop popping) en routers R4 y R3\n- Customer A usa eBGP para inyectar rutas a ISP (redistribuci\u00f3n a MP-BGP)\n- Customer B usa EIGRP para inyectar rutas a ISP (redistribuci\u00f3n a MP-BGP)</text></svg>",
                 "x": -294,
@@ -280,7 +250,6 @@
             },
             {
                 "drawing_id": "47a7d33c-959a-459a-8b97-78ea1430361a",
-                "locked": false,
                 "rotation": 0,
                 "svg": "<svg height=\"25\" width=\"26\"><text fill=\"#000000\" fill-opacity=\"1.0\" font-family=\"TypeWriter\" font-size=\"10.0\" font-weight=\"bold\">PE</text></svg>",
                 "x": -272,
@@ -289,7 +258,6 @@
             },
             {
                 "drawing_id": "2ce30d29-802e-426b-8e3d-67d2a235cbcf",
-                "locked": false,
                 "rotation": 0,
                 "svg": "<svg height=\"25\" width=\"26\"><text fill=\"#000000\" fill-opacity=\"1.0\" font-family=\"TypeWriter\" font-size=\"10.0\" font-weight=\"bold\">PE</text></svg>",
                 "x": 286,
@@ -298,7 +266,6 @@
             },
             {
                 "drawing_id": "e82ad907-fb02-45f1-97c4-72c85e2f0ac4",
-                "locked": false,
                 "rotation": 0,
                 "svg": "<svg height=\"25\" width=\"17\"><text fill=\"#000000\" fill-opacity=\"1.0\" font-family=\"TypeWriter\" font-size=\"10.0\" font-weight=\"bold\">P</text></svg>",
                 "x": -82,
@@ -307,7 +274,6 @@
             },
             {
                 "drawing_id": "89ce28b7-c1fb-4f33-aa6a-d1fde0cdb4e7",
-                "locked": false,
                 "rotation": 0,
                 "svg": "<svg height=\"25\" width=\"17\"><text fill=\"#000000\" fill-opacity=\"1.0\" font-family=\"TypeWriter\" font-size=\"10.0\" font-weight=\"bold\">P</text></svg>",
                 "x": 110,
@@ -316,7 +282,6 @@
             },
             {
                 "drawing_id": "2c7597c3-95f6-47f7-ad08-045c4f9e6291",
-                "locked": false,
                 "rotation": 0,
                 "svg": "<svg height=\"93\" width=\"250\"><text fill=\"#000000\" fill-opacity=\"1.0\" font-family=\"TypeWriter\" font-size=\"10.0\" font-weight=\"bold\">- sh ip route (RIB)\n- sh ip cef (FIB)\n- sh mpls ldp binding (LIB)\n- sh mpls forwarding-table (LFIB)\n- sh mpls ldp neighbour</text></svg>",
                 "x": -84,
@@ -325,7 +290,6 @@
             },
             {
                 "drawing_id": "22b9be6e-df2c-4010-b907-050acb8d0dac",
-                "locked": false,
                 "rotation": 0,
                 "svg": "<svg height=\"25\" width=\"108\"><text fill=\"#000000\" fill-opacity=\"1.0\" font-family=\"TypeWriter\" font-size=\"10.0\" font-weight=\"bold\">eBGP (65012)</text></svg>",
                 "x": -363,
@@ -334,7 +298,6 @@
             },
             {
                 "drawing_id": "4eb3c84d-8be4-4c28-b429-dbedf41881e5",
-                "locked": false,
                 "rotation": 0,
                 "svg": "<svg height=\"25\" width=\"46\"><text fill=\"#000000\" fill-opacity=\"1.0\" font-family=\"TypeWriter\" font-size=\"10.0\" font-weight=\"bold\">eBGP</text></svg>",
                 "x": 377,
@@ -343,7 +306,6 @@
             },
             {
                 "drawing_id": "f66d0caf-5b9c-453f-8422-f644f745dd15",
-                "locked": false,
                 "rotation": 0,
                 "svg": "<svg height=\"25\" width=\"51\"><text fill=\"#000000\" fill-opacity=\"1.0\" font-family=\"TypeWriter\" font-size=\"10.0\" font-weight=\"bold\">EIGRP</text></svg>",
                 "x": -362,
@@ -352,7 +314,6 @@
             },
             {
                 "drawing_id": "bdab1b51-99f8-48c4-99ad-575978c98053",
-                "locked": false,
                 "rotation": 0,
                 "svg": "<svg height=\"25\" width=\"51\"><text fill=\"#000000\" fill-opacity=\"1.0\" font-family=\"TypeWriter\" font-size=\"10.0\" font-weight=\"bold\">EIGRP</text></svg>",
                 "x": 380,
@@ -361,7 +322,6 @@
             },
             {
                 "drawing_id": "7768a430-8e55-4f60-9be1-2821b77b9229",
-                "locked": false,
                 "rotation": 0,
                 "svg": "<svg height=\"25\" width=\"35\"><text fill=\"#000000\" fill-opacity=\"1.0\" font-family=\"TypeWriter\" font-size=\"10.0\" font-weight=\"bold\">CPE</text></svg>",
                 "x": -510,
@@ -370,7 +330,6 @@
             },
             {
                 "drawing_id": "687eefc9-4e4e-4c6e-a6dc-87bb438126db",
-                "locked": false,
                 "rotation": 0,
                 "svg": "<svg height=\"25\" width=\"35\"><text fill=\"#000000\" fill-opacity=\"1.0\" font-family=\"TypeWriter\" font-size=\"10.0\" font-weight=\"bold\">CPE</text></svg>",
                 "x": -510,
@@ -379,7 +338,6 @@
             },
             {
                 "drawing_id": "44d855bc-eecc-48ef-b7c1-c4e07dbdafbe",
-                "locked": false,
                 "rotation": 0,
                 "svg": "<svg height=\"25\" width=\"35\"><text fill=\"#000000\" fill-opacity=\"1.0\" font-family=\"TypeWriter\" font-size=\"10.0\" font-weight=\"bold\">CPE</text></svg>",
                 "x": 485,
@@ -388,7 +346,6 @@
             },
             {
                 "drawing_id": "5e4324bd-415f-4b22-b3df-674d1bbb13e7",
-                "locked": false,
                 "rotation": 0,
                 "svg": "<svg height=\"25\" width=\"35\"><text fill=\"#000000\" fill-opacity=\"1.0\" font-family=\"TypeWriter\" font-size=\"10.0\" font-weight=\"bold\">CPE</text></svg>",
                 "x": 488,
@@ -397,7 +354,6 @@
             },
             {
                 "drawing_id": "5ddcfb74-0369-4b71-8069-6f435d2c7a35",
-                "locked": false,
                 "rotation": 0,
                 "svg": "e9745e78afb33d0dff1856b40051bbe8.svg",
                 "x": 616,
@@ -406,7 +362,6 @@
             },
             {
                 "drawing_id": "8dbb7b8c-b37a-4718-8792-22f7fbab4ebc",
-                "locked": false,
                 "rotation": 0,
                 "svg": "<svg height=\"246\" width=\"452\"><text fill=\"#000000\" fill-opacity=\"1.0\" font-family=\"TypeWriter\" font-size=\"10.0\" font-weight=\"bold\">R5#sh ip bgp vpnv4 all \nBGP table version is 13, local router ID is 5.5.5.5\n     Network          Next Hop            Metric LocPrf Weight Path\nRoute Distinguisher: 2345:1 (default for vrf CUSTOMER-A)\n *&gt;i 1.1.1.0/24       2.2.2.2                  0    100      0 65012 ?\n *&gt;  6.6.6.0/24       192.168.56.1             0             0 65056 ?\n *&gt;i 192.168.12.0     2.2.2.2                  0    100      0 ?\n *&gt;  192.168.56.0     0.0.0.0                  0         32768 ?\nRoute Distinguisher: 2345:2 (default for vrf CUSTOMER-B)\n *&gt;  11.11.11.0/24    192.168.11.1        156160         32768 ?\n *&gt;i 22.22.22.0/24    2.2.2.2             156160    100      0 ?\n *&gt;  192.168.11.0     0.0.0.0                  0         32768 ?\n *&gt;i 192.168.22.0     2.2.2.2                  0    100      0 ?\n</text></svg>",
                 "x": -195,
@@ -418,7 +373,6 @@
             {
                 "filters": {},
                 "link_id": "ee082847-b86d-41ba-8415-576154c7318b",
-                "link_style": {},
                 "nodes": [
                     {
                         "adapter_number": 0,
@@ -450,7 +404,6 @@
             {
                 "filters": {},
                 "link_id": "4fb12f42-b0f5-442a-8e85-752780a02df5",
-                "link_style": {},
                 "nodes": [
                     {
                         "adapter_number": 1,
@@ -482,7 +435,6 @@
             {
                 "filters": {},
                 "link_id": "afb8dd15-a7ad-442f-83c9-617d01a99e43",
-                "link_style": {},
                 "nodes": [
                     {
                         "adapter_number": 1,
@@ -514,7 +466,6 @@
             {
                 "filters": {},
                 "link_id": "5d5c43b4-2218-4e4d-a90e-22fd5ef04c0f",
-                "link_style": {},
                 "nodes": [
                     {
                         "adapter_number": 1,
@@ -546,7 +497,6 @@
             {
                 "filters": {},
                 "link_id": "c6f6525b-6d4e-4a5c-aef3-5fb6c50f9bf4",
-                "link_style": {},
                 "nodes": [
                     {
                         "adapter_number": 1,
@@ -578,7 +528,6 @@
             {
                 "filters": {},
                 "link_id": "0c98bfb6-5be7-46a1-85c3-9bf2191a5080",
-                "link_style": {},
                 "nodes": [
                     {
                         "adapter_number": 1,
@@ -610,7 +559,6 @@
             {
                 "filters": {},
                 "link_id": "dadb91be-cbb1-4556-8db7-5d999ea1d76e",
-                "link_style": {},
                 "nodes": [
                     {
                         "adapter_number": 1,
@@ -643,10 +591,8 @@
         "nodes": [
             {
                 "compute_id": "local",
-                "console": 5001,
-                "console_auto_start": false,
+                "console": 5006,
                 "console_type": "telnet",
-                "custom_adapters": [],
                 "first_port_name": null,
                 "height": 45,
                 "label": {
@@ -656,7 +602,6 @@
                     "x": 0,
                     "y": -26
                 },
-                "locked": false,
                 "name": "R1",
                 "node_id": "3208c094-af91-458f-8f7d-c9c1fd333fe2",
                 "node_type": "dynamips",
@@ -700,11 +645,9 @@
                     "slot5": null,
                     "slot6": null,
                     "sparsemem": true,
-                    "system_id": "FTX0945W0MY",
-                    "usage": ""
+                    "system_id": "FTX0945W0MY"
                 },
                 "symbol": ":/symbols/router.svg",
-                "template_id": null,
                 "width": 66,
                 "x": -523,
                 "y": -233,
@@ -712,10 +655,8 @@
             },
             {
                 "compute_id": "local",
-                "console": 5002,
-                "console_auto_start": false,
+                "console": 5007,
                 "console_type": "telnet",
-                "custom_adapters": [],
                 "first_port_name": null,
                 "height": 45,
                 "label": {
@@ -725,7 +666,6 @@
                     "x": -23,
                     "y": 49
                 },
-                "locked": false,
                 "name": "SW2",
                 "node_id": "1cec514e-06c4-4b5b-9d32-f864f46872b8",
                 "node_type": "dynamips",
@@ -769,11 +709,9 @@
                     "slot5": null,
                     "slot6": null,
                     "sparsemem": true,
-                    "system_id": "FTX0945W0MY",
-                    "usage": ""
+                    "system_id": "FTX0945W0MY"
                 },
                 "symbol": ":/symbols/router.svg",
-                "template_id": null,
                 "width": 66,
                 "x": -525,
                 "y": 66,
@@ -781,10 +719,8 @@
             },
             {
                 "compute_id": "local",
-                "console": 5014,
-                "console_auto_start": false,
+                "console": 5008,
                 "console_type": "telnet",
-                "custom_adapters": [],
                 "first_port_name": null,
                 "height": 45,
                 "label": {
@@ -794,7 +730,6 @@
                     "x": -1,
                     "y": 45
                 },
-                "locked": false,
                 "name": "R2",
                 "node_id": "2efd65a2-44df-40b6-8cf1-d11a69eb9642",
                 "node_type": "dynamips",
@@ -838,11 +773,9 @@
                     "slot5": null,
                     "slot6": null,
                     "sparsemem": true,
-                    "system_id": "FTX0945W0MY",
-                    "usage": ""
+                    "system_id": "FTX0945W0MY"
                 },
                 "symbol": ":/symbols/router.svg",
-                "template_id": null,
                 "width": 66,
                 "x": -294,
                 "y": -69,
@@ -850,10 +783,8 @@
             },
             {
                 "compute_id": "local",
-                "console": 5015,
-                "console_auto_start": false,
+                "console": 5009,
                 "console_type": "telnet",
-                "custom_adapters": [],
                 "first_port_name": null,
                 "height": 45,
                 "label": {
@@ -863,7 +794,6 @@
                     "x": -6,
                     "y": 41
                 },
-                "locked": false,
                 "name": "R3",
                 "node_id": "a0e16f3c-4dcd-4186-b324-7e4b3cedb7a8",
                 "node_type": "dynamips",
@@ -907,11 +837,9 @@
                     "slot5": null,
                     "slot6": null,
                     "sparsemem": true,
-                    "system_id": "FTX0945W0MY",
-                    "usage": ""
+                    "system_id": "FTX0945W0MY"
                 },
                 "symbol": ":/symbols/router.svg",
-                "template_id": null,
                 "width": 66,
                 "x": -107,
                 "y": -21,
@@ -919,10 +847,8 @@
             },
             {
                 "compute_id": "local",
-                "console": 5016,
-                "console_auto_start": false,
+                "console": 5010,
                 "console_type": "telnet",
-                "custom_adapters": [],
                 "first_port_name": null,
                 "height": 45,
                 "label": {
@@ -932,7 +858,6 @@
                     "x": -3,
                     "y": 40
                 },
-                "locked": false,
                 "name": "R4",
                 "node_id": "3fd966c3-e3c4-4dfa-a3a7-b4370d32ddda",
                 "node_type": "dynamips",
@@ -976,11 +901,9 @@
                     "slot5": null,
                     "slot6": null,
                     "sparsemem": true,
-                    "system_id": "FTX0945W0MY",
-                    "usage": ""
+                    "system_id": "FTX0945W0MY"
                 },
                 "symbol": ":/symbols/router.svg",
-                "template_id": null,
                 "width": 66,
                 "x": 83,
                 "y": -19,
@@ -988,10 +911,8 @@
             },
             {
                 "compute_id": "local",
-                "console": 5017,
-                "console_auto_start": false,
+                "console": 5011,
                 "console_type": "telnet",
-                "custom_adapters": [],
                 "first_port_name": null,
                 "height": 45,
                 "label": {
@@ -1001,7 +922,6 @@
                     "x": -1,
                     "y": -25
                 },
-                "locked": false,
                 "name": "R6",
                 "node_id": "2d8ff862-f6ee-4e73-8e62-adb4fdb96abc",
                 "node_type": "dynamips",
@@ -1045,11 +965,9 @@
                     "slot5": null,
                     "slot6": null,
                     "sparsemem": true,
-                    "system_id": "FTX0945W0MY",
-                    "usage": ""
+                    "system_id": "FTX0945W0MY"
                 },
                 "symbol": ":/symbols/router.svg",
-                "template_id": null,
                 "width": 66,
                 "x": 470,
                 "y": -203,
@@ -1057,10 +975,8 @@
             },
             {
                 "compute_id": "local",
-                "console": 5018,
-                "console_auto_start": false,
+                "console": 5012,
                 "console_type": "telnet",
-                "custom_adapters": [],
                 "first_port_name": null,
                 "height": 45,
                 "label": {
@@ -1070,7 +986,6 @@
                     "x": -24,
                     "y": 44
                 },
-                "locked": false,
                 "name": "SW1",
                 "node_id": "2bf0c10a-1851-4a15-93a7-6eecbc94f541",
                 "node_type": "dynamips",
@@ -1114,11 +1029,9 @@
                     "slot5": null,
                     "slot6": null,
                     "sparsemem": true,
-                    "system_id": "FTX0945W0MY",
-                    "usage": ""
+                    "system_id": "FTX0945W0MY"
                 },
                 "symbol": ":/symbols/router.svg",
-                "template_id": null,
                 "width": 66,
                 "x": 472,
                 "y": 75,
@@ -1126,10 +1039,8 @@
             },
             {
                 "compute_id": "local",
-                "console": 5019,
-                "console_auto_start": false,
+                "console": 5013,
                 "console_type": "telnet",
-                "custom_adapters": [],
                 "first_port_name": null,
                 "height": 45,
                 "label": {
@@ -1139,7 +1050,6 @@
                     "x": -19,
                     "y": 44
                 },
-                "locked": false,
                 "name": "R5",
                 "node_id": "70ddf2d3-c1b3-410a-9f60-de70f8f8ae8b",
                 "node_type": "dynamips",
@@ -1183,11 +1093,9 @@
                     "slot5": null,
                     "slot6": null,
                     "sparsemem": true,
-                    "system_id": "FTX0945W0MY",
-                    "usage": ""
+                    "system_id": "FTX0945W0MY"
                 },
                 "symbol": ":/symbols/router.svg",
-                "template_id": null,
                 "width": 66,
                 "x": 265,
                 "y": -62,
@@ -1197,6 +1105,6 @@
     },
     "type": "topology",
     "variables": null,
-    "version": "2.2.28",
+    "version": "2.1.21",
     "zoom": 99
 }

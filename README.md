@@ -3,7 +3,12 @@
 **Content**
 - [l3vpn](#l3vpn)
 - [l2vpn](#l2vpn)
-- [HSRP](#hsrp)
+- [hsrp](#hsrp)
+- [automation-basic](#automationbasic)
+- [monitoring](#monitoring)
+- [vxlan-basic](#vxlanbasic)
+- [lacp-vpc](#lacpvpc)
+- [datacenter-design](#datacenter-design)
 
 ### l3vpn
 
@@ -114,7 +119,9 @@ Route Distinguisher: 2345:2 (default for vrf CUSTOMER-B)
  *>  192.168.11.0     0.0.0.0                  0         32768 ?
  *>i 192.168.22.0     2.2.2.2                  0    100      0 ?
 ```
+
 # l2vpn
+
 Esquema de l2vpn sobre red mpls utilizando ospf para redistribucion de loopbacks. Por otro lado, se utiliza xconnect en extremos de clientes para generar un vinculo l2 a través de nube mpls y RIP para redistribución de rutas entre extremos.
 
 ```
@@ -129,9 +136,47 @@ end
 ![Figura 2](l2vpn/l2vpn.png)
 
 
-
 # hsrp
 
 Se utiliza HSRP para dar redundancia a default gateway de una red con multiples proveedores. Además, se utiliza tracking para cambiar el costo de la prioridad HSRP ante caida de interfaz wan. Tambien se utiliza IP SLA para trackear el estado de las interfaces del lado carrier.
 
 ![Figura 3](hsrp/hsrp.png)
+
+
+# automationbasic
+
+En este laboratorio se dispone una red de management (dhcp) a la cual estará conectado un host de aprovisionamiento que utilizará ansible y un inventario estático para realizar in-bulk configurations
+
+![Figura 4](automation/automation-basic/automation-basic.png)
+
+
+# monitoring
+
+Utilizando un flujo como el que se muestra en la figura 5, se utiliza ansible para recolectar estadísticas de round trip delay, jitter. Estos datos son parseados utilizando textFSM para ser dispuestos en una estructura de datos *json-like*, que luego será insertado en una base de datos de series de tiempo. Esta información será consumida por una plataforma de visualización para que los datos puedan ser consumidos por usuarios finales. La idea de este escenario, es mostrar el flujo completo desde la recolecció, procesamiento y hasta la visualización.
+
+![Figura 5](automation/telemetry/flow.png)
+
+![Figura 6](automation/telemetry/database.png)
+
+![Figura 7](automation/telemetry/dashboard.png)
+
+
+# vxlanbasic
+
+Se dispone de un laboratorio con dos dispositivos que conforman una nube VxLAN. Como protocolo de underlay de utiliza OSPF. Se utiliza multicast (pim-sparse) para el descubrimiento de VTEPs en el underlay. Se configuran jumbo frames para evitar fragmentación por el header de VxLAN. El método de aprendizaje está basado en dataplane y es flooding.
+
+![Figura 8](datacenter/vxlan-basic/vxlan.png)
+
+
+# lacpvpc
+
+Se configura un dominio de VPC simulando un esquema de acceso-distribucion en donde se llega al acceso con HA.
+
+![Figura 9](datacenter/vpc/vpc.png)
+
+
+# datacenter-design
+
+TBD 
+
+![Figura 10](datacenter/vxlan-fabric/vxlan.png)
